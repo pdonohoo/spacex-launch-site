@@ -1,0 +1,23 @@
+{
+  "name": "spacex-launch-site",
+  "version": "1.0.0",
+  "description": "app that lists spacex launch misisons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+
+  },
+  "author": "Preston Donohoo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.17.0",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
