@@ -1,21 +1,25 @@
 {
   "name": "spacex-launch-site",
   "version": "1.0.0",
-  "description": "app that lists spacex launch misisons",
+  "description": "app that lists spacex launch missions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "server": "nodemon index.js"
-
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\"\"npm run client\""
   },
   "author": "Preston Donohoo",
   "license": "ISC",
   "dependencies": {
+    "apollo-boost": "^0.4.0",
     "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
     "express": "^4.17.0",
     "express-graphql": "^0.8.0",
-    "graphql": "^14.3.0"
+    "graphql": "^14.3.1",
+    "react-apollo": "^2.5.6"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
