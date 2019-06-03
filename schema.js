@@ -14,7 +14,7 @@ const LaunchType = new GraphQLObjectType({
     rocket: { type: RocketType }
   })
 })
-
+ 
 const RocketType = new GraphQLObjectType({
   name: 'Rocket',
   fields: () => ({
@@ -36,7 +36,7 @@ const RootQuery = new GraphQLObjectType({
           .get('https://api.spacexdata.com/v3/launches')
           .then(res => res.data)
         }
-    },
+    }, 
     launch: {
       type: LaunchType,
       args: {
